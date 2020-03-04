@@ -2,7 +2,7 @@ stages:
 - name: Compile
   steps:
   - publishImageConfig:
-      dockerfilePath: ./Dockerfile
+      dockerfilePath: ./icinga2/Dockerfile
       buildContext: ./icinga2/
       tag: labtagon/icinga2:latest
       pushRemote: true
