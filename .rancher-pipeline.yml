@@ -1,0 +1,11 @@
+stages:
+- name: Compile
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./icinga2/Dockerfile
+      buildContext: .
+      tag: labtagon/icinga2:latest
+      pushRemote: true
+      registry: index.docker.io
+timeout: 60
+notification: {}
