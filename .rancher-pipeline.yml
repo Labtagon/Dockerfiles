@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./icinga2/Dockerfile
       buildContext: ./icinga2/
-      tag: labtagon/icinga2:latest
+      tag: icinga2:latest
       pushRemote: true
       registry: registry.labtagon.com
 timeout: 60
