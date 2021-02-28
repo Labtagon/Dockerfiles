@@ -6,6 +6,6 @@ stages:
       buildContext: ./icinga2/
       tag: icinga2:latest
       pushRemote: true
-      registry: registry.labtagon.com
+      registry: https://registry.labtagon.cloud/
 timeout: 60
 notification: {}
